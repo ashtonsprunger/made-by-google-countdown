@@ -24,8 +24,13 @@ let myfunc = setInterval(function(){
 }, 1000)
 
 function updateDom(time){
+    if(time.hours!=0){
+        time.hours-=1;
+    }else{
+        time.hours=23;
+    }
     daysElement.innerHTML = time.days;
-    hoursElement.innerHTML = time.hours-1;
+    hoursElement.innerHTML = time.hours;
     minutesElement.innerHTML = time.minutes;
     secondsElement.innerHTML = time.seconds;
     if(time.timeleft < 0){
