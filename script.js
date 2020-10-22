@@ -25,7 +25,7 @@ let myfunc = setInterval(function(){
 
 function updateDom(time){
     daysElement.innerHTML = time.days;
-    hoursElement.innerHTML = time.hours;
+    hoursElement.innerHTML = time.hours-1;
     minutesElement.innerHTML = time.minutes;
     secondsElement.innerHTML = time.seconds;
     if(time.timeleft < 0){
