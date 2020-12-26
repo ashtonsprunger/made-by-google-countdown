@@ -11,6 +11,7 @@
   flex-direction: column;
   background-image: url("https://images.unsplash.com/photo-1544348843-f8d23bbc2985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
   background-size: cover;
+  overflow: hidden;
 }
 
 .main {

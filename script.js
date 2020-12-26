@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
 
 var countDownDate = new Date("Dec 25, 2020 00:00:00").getTime();
 
-let myfunc = setInterval(function () {
+let main = function () {
   let now = new Date().getTime();
   let timeleft = countDownDate - now;
 
@@ -28,7 +28,9 @@ let myfunc = setInterval(function () {
     seconds,
     timeleft,
   });
-}, 1000);
+};
+
+let myfunc = setInterval(main, 1000);
 
 function updateDom(time) {
   // if(time.hours!=0){
@@ -47,3 +49,5 @@ function updateDom(time) {
     document.getElementById("main").appendChild(h1);
   }
 }
+
+main();
