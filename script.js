@@ -5,12 +5,12 @@ let secondsElement = document.getElementById("seconds");
 let audio = document.getElementById("canon");
 let button = document.getElementById("play");
 
+var countDownDate = new Date("Dec 25, 2021 00:00:00").getTime();
+
 button.addEventListener("click", () => {
   audio.play();
   button.style.display = "none";
 });
-
-var countDownDate = new Date("Dec 25, 2021 00:00:00").getTime();
 
 let main = function () {
   let now = new Date().getTime();
@@ -44,7 +44,7 @@ function updateDom(time) {
   secondsElement.innerHTML = time.seconds;
   if (time.timeleft < 0) {
     let h1 = document.createElement("h1");
-    h1.innerHTML = "IT'S CHRISTMAS!!";
+    h1.innerHTML = "MERRY CHRISTMAS!!";
     document.getElementById("main").innerHTML = "";
     document.getElementById("main").appendChild(h1);
   }

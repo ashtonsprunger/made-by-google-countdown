@@ -52,14 +52,15 @@ span {
   width: fit-content;
   position: absolute;
   left: 50%;
-  bottom: 5%;
+  top: 4%;
   transform: translate(-50%);
   color: white;
   background-color: rgba(0, 0, 0, 0.514);
   border: none;
   padding: 0.5em;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
+  font-size: large;
 }
 
 @media screen and (min-width: 1000px) {
