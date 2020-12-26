@@ -1,54 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: cursive;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
 }
 
-.wrapper{
-    position: relative;
-    height: 100vh;
-    display: flex;
-    background-image: url('https://images.unsplash.com/photo-1544348843-f8d23bbc2985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
-    background-size: cover;
+.wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1544348843-f8d23bbc2985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  background-size: cover;
 }
 
-.main{
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.514);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 30px;
-    border-radius: 50px;
+.main {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.514);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 30px;
+  border-radius: 50px;
 }
 
-h1, h3{
-    text-align: center;
+h1,
+h3 {
+  text-align: center;
 }
 
-h1{
-    font-size: 30px;
+h1 {
+  font-size: 30px;
 }
 
-h3{
-    font-size: 20px;
-    color: rgb(255, 64, 64);
+h3 {
+  font-size: 20px;
+  color: rgb(255, 64, 64);
 }
 
-span{
-    color: rgb(65, 132, 255);
+span {
+  color: rgb(65, 132, 255);
 }
 
-@media screen and (min-width: 1000px){
-    h1{
-        font-size: 60px;
-    }
-    
-    h3{
-        font-size: 35px;
-    }
-    .wrapper{
-        background-image: url('https://images.unsplash.com/photo-1544348843-a72ed658f90c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
-    }
+#play {
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.514);
+  border: none;
+  padding: 0.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+  .wrapper {
+    background-image: url("https://images.unsplash.com/photo-1544348843-a72ed658f90c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  }
 }

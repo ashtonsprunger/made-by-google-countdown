@@ -2,8 +2,13 @@ let daysElement = document.getElementById("days");
 let hoursElement = document.getElementById("hours");
 let minutesElement = document.getElementById("minutes");
 let secondsElement = document.getElementById("seconds");
+let audio = document.getElementById("canon");
+let button = document.getElementById("play");
 
-document.getElementById("canon").play();
+button.addEventListener("click", () => {
+  audio.play();
+  button.style.display = "none";
+});
 
 var countDownDate = new Date("Dec 25, 2020 00:00:00").getTime();
 
