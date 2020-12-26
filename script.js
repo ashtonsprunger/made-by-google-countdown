@@ -3,6 +3,8 @@ let hoursElement = document.getElementById("hours");
 let minutesElement = document.getElementById("minutes");
 let secondsElement = document.getElementById("seconds");
 
+document.getElementById("canon").play();
+
 var countDownDate = new Date("Dec 25, 2020 00:00:00").getTime();
 
 let myfunc = setInterval(function () {
