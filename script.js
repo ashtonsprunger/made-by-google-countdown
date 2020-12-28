@@ -37,6 +37,9 @@ let backgroundImage =
 // border radius
 let borderRadius = 40;
 
+// says when it comes
+let whatToSay = "HAPPY NEW YEAR!!";
+
 //! END OF TO CHANGE
 
 link.href = icon;
@@ -94,7 +97,7 @@ function updateDom(time) {
   secondsElement.innerHTML = time.seconds;
   if (time.timeleft < 0) {
     let h1 = document.createElement("h1");
-    h1.innerHTML = "MERRY CHRISTMAS!!";
+    h1.innerHTML = whatToSay;
     document.getElementById("main").innerHTML = "";
     document.getElementById("main").appendChild(h1);
   }
