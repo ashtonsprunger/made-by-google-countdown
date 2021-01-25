@@ -10,7 +10,7 @@ let occasionEl = document.getElementById("occasion");
 //! VARIABLES TO CHANGE
 
 // icon at the top of the page
-let icon = "https://www.freeiconspng.com/uploads/red-fireworks-png-26.png";
+let icon = "./icon.png";
 
 // appears on the screen after the times
 let occasion = "UNTIL SILAS IS DUE";
