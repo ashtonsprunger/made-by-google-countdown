@@ -13,29 +13,31 @@ let occasionEl = document.getElementById("occasion");
 let icon = "https://www.freeiconspng.com/uploads/red-fireworks-png-26.png";
 
 // appears on the screen after the times
-let occasion = "UNTIL 2021";
+let occasion = "UNTIL SILAS IS DUE";
 
 // when to count down to
-let date = "Jan 1, 2021 00:00:00";
+let date = "Jun 1, 2021 00:00:00";
 
 // color of the numbers counting down
-let numColor = "blue";
+let numColor = "white";
 
 // color of the words, 'IT IS CURRENTLY' and occasion
-let wordsColor = "red";
+let wordsColor = "green";
 
 // color of the words, 'DAYS', 'HOURS' ECT.
-let hoursColor = "white";
+let hoursColor = "lightBlue";
 
 // what music to play
 let music = "./canon-in-d.mp3";
 
-// background image
-let backgroundImage =
-  "https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80";
+// background image or color
+let backgroundImage = "lightBlue";
+
+// background color of the middle
+let middleBackground = "rgba(0, 255, 0, 0.5)";
 
 // border radius
-let borderRadius = 40;
+let borderRadius = 0;
 
 // says when it comes
 let whatToSay = "HAPPY NEW YEAR!!";
@@ -54,11 +56,21 @@ document.getElementById("itis").style.color = wordsColor;
 document.getElementsByClassName("main")[0].style.color = hoursColor;
 document.getElementsByClassName(
   "main"
+)[0].style.backgroundColor = middleBackground;
+document.getElementsByClassName(
+  "main"
 )[0].style.borderRadius = `${borderRadius}px`;
 audio.href = music;
-document.getElementsByClassName(
-  "wrapper"
-)[0].style.backgroundImage = `url('${backgroundImage}')`;
+
+if (backgroundImage.startsWith("http")) {
+  document.getElementsByClassName(
+    "wrapper"
+  )[0].style.backgroundImage = `url('${backgroundImage}')`;
+} else {
+  document.getElementsByClassName(
+    "wrapper"
+  )[0].style.background = backgroundImage;
+}
 
 button.addEventListener("click", () => {
   audio.play();
