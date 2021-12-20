@@ -13,19 +13,19 @@ let occasionEl = document.getElementById("occasion");
 let icon = "./icon.png";
 
 // appears on the screen after the times
-let occasion = "UNTIL SILAS IS DUE";
+let occasion = "UNTIL CHRISTMAS";
 
 // when to count down to
-let date = "Jun 1, 2021 00:00:00";
+let date = "Dec 25, 2021 00:00:00";
 
 // color of the numbers counting down
 let numColor = "white";
 
 // color of the words, 'IT IS CURRENTLY' and occasion
-let wordsColor = "green";
+let wordsColor = "red";
 
 // color of the words, 'DAYS', 'HOURS' ECT.
-let hoursColor = "lightBlue";
+let hoursColor = "blue";
 
 // what music to play
 let music = "./canon-in-d.mp3";
@@ -34,13 +34,13 @@ let music = "./canon-in-d.mp3";
 let backgroundImage = "lightBlue";
 
 // background color of the middle
-let middleBackground = "rgba(0, 255, 0, 0.5)";
+let middleBackground = "rgba(0, 0, 0, 0.5)";
 
 // border radius
-let borderRadius = 0;
+let borderRadius = 25;
 
 // says when it comes
-let whatToSay = "HAPPY NEW YEAR!!";
+let whatToSay = "MERRY CHRISTMAS!!";
 
 //! END OF TO CHANGE
 
