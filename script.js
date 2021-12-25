@@ -31,7 +31,7 @@ let hoursColor = "blue";
 let music = "./canon-in-d.mp3";
 
 // background image or color
-let backgroundImage = "white";
+let backgroundImage = "#188200";
 
 // background color of the middle
 let middleBackground = "rgba(0, 0, 0, 0.5)";
