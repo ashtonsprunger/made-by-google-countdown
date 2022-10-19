@@ -25,7 +25,7 @@ let numColor = "white";
 let wordsColor = "red";
 
 // color of the words, 'DAYS', 'HOURS' ECT.
-let hoursColor = "blue";
+let hoursColor = "#4d91ff";
 
 // what music to play
 let music = "./canon-in-d.mp3";
@@ -54,9 +54,8 @@ minutes.style.color = numColor;
 seconds.style.color = numColor;
 document.getElementById("itis").style.color = wordsColor;
 document.getElementsByClassName("main")[0].style.color = hoursColor;
-document.getElementsByClassName(
-  "main"
-)[0].style.backgroundColor = middleBackground;
+document.getElementsByClassName("main")[0].style.backgroundColor =
+  middleBackground;
 document.getElementsByClassName(
   "main"
 )[0].style.borderRadius = `${borderRadius}px`;
@@ -67,9 +66,8 @@ if (backgroundImage.startsWith("http")) {
     "wrapper"
   )[0].style.backgroundImage = `url('${backgroundImage}')`;
 } else {
-  document.getElementsByClassName(
-    "wrapper"
-  )[0].style.background = backgroundImage;
+  document.getElementsByClassName("wrapper")[0].style.background =
+    backgroundImage;
 }
 
 button.addEventListener("click", () => {
@@ -82,7 +80,11 @@ let main = function () {
   let timeleft = countDownDate - now;
 
   let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const nowHours = new Date().getHours();
+  let hours = 24 - nowHours;
+  hours -= 1;
+  hours = hours < 0 ? 23 : hours;
   let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
