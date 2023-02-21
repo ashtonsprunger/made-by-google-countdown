@@ -16,7 +16,7 @@ let icon = "./icon.png";
 let occasion = "UNTIL CHRISTMAS";
 
 // when to count down to
-let date = "Dec 25, 2022 00:00:00";
+let date = "Dec 25, 2023 00:00:00";
 
 // color of the numbers counting down
 let numColor = "white";
