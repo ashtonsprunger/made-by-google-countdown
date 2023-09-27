@@ -19,13 +19,13 @@ let occasion = "UNTIL MADE BY GOOGLE";
 let date = "Oct 4, 2023 10:00:00";
 
 // color of the numbers counting down
-let numColor = "#2d7a26";
+let numColor = "#e0b528";
 
 // color of the words, 'IT IS CURRENTLY' and occasion
-let wordsColor = "#d13838";
+let wordsColor = "#2d7a26";
 
 // color of the words, 'DAYS', 'HOURS' ECT.
-let hoursColor = "#e0b528";
+let hoursColor = "#d13838";
 
 // what music to play
 let music = "./canon-in-d.mp3";
