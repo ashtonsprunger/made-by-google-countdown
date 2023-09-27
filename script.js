@@ -22,16 +22,16 @@ let date = "Oct 4, 2023 10:00:00";
 let numColor = "#2d7a26";
 
 // color of the words, 'IT IS CURRENTLY' and occasion
-let wordsColor = "#e0b528";
+let wordsColor = "#d13838";
 
 // color of the words, 'DAYS', 'HOURS' ECT.
-let hoursColor = "#386ed1";
+let hoursColor = "#e0b528";
 
 // what music to play
 let music = "./canon-in-d.mp3";
 
 // background image or color
-let backgroundImage = "#d13838";
+let backgroundImage = "#386ed1";
 
 // background color of the middle
 let middleBackground = "white";
