@@ -16,7 +16,7 @@ let icon = "./icon.png";
 let occasion = "UNTIL MADE BY GOOGLE";
 
 // when to count down to
-let date = "Sep 4, 2023 10:00:00";
+let date = "Oct 4, 2023 10:00:00";
 
 // color of the numbers counting down
 let numColor = "white";
