@@ -13,10 +13,10 @@ let occasionEl = document.getElementById("occasion");
 let icon = "./icon.png";
 
 // appears on the screen after the times
-let occasion = "UNTIL CHRISTMAS";
+let occasion = "UNTIL MADE BY GOOGLE";
 
 // when to count down to
-let date = "Dec 25, 2023 00:00:00";
+let date = "Sep 4, 2023 10:00:00";
 
 // color of the numbers counting down
 let numColor = "white";
@@ -40,7 +40,7 @@ let middleBackground = "rgba(0, 0, 0, 0.5)";
 let borderRadius = 25;
 
 // says when it comes
-let whatToSay = "MERRY CHRISTMAS!!";
+let whatToSay = "Go to https://GoogleStore.com/events!!";
 
 //! END OF TO CHANGE
 
