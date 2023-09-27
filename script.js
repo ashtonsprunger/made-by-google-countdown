@@ -70,10 +70,10 @@ if (backgroundImage.startsWith("http")) {
     backgroundImage;
 }
 
-button.addEventListener("click", () => {
-  audio.play();
-  button.style.display = "none";
-});
+// button.addEventListener("click", () => {
+//   audio.play();
+//   button.style.display = "none";
+// });
 
 let main = function () {
   let now = new Date().getTime();
