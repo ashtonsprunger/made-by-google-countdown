@@ -34,7 +34,7 @@ let music = "./canon-in-d.mp3";
 let backgroundImage = "#d13838";
 
 // background color of the middle
-let middleBackground = "rgba(0, 0, 0, 0.5)";
+let middleBackground = "white";
 
 // border radius
 let borderRadius = 25;
