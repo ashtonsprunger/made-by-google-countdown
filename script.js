@@ -31,7 +31,7 @@ let hoursColor = "#4d91ff";
 let music = "./canon-in-d.mp3";
 
 // background image or color
-let backgroundImage = "#188200";
+let backgroundImage = "#c74848";
 
 // background color of the middle
 let middleBackground = "rgba(0, 0, 0, 0.5)";
@@ -40,7 +40,7 @@ let middleBackground = "rgba(0, 0, 0, 0.5)";
 let borderRadius = 25;
 
 // says when it comes
-let whatToSay = "Go to https://GoogleStore.com/events!!";
+let whatToSay = "Go to https://GoogleStore.com/events !!";
 
 //! END OF TO CHANGE
 
@@ -80,11 +80,11 @@ let main = function () {
   let timeleft = countDownDate - now;
 
   let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-  // let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const nowHours = new Date().getHours();
-  let hours = 24 - nowHours;
-  hours -= 1;
-  hours = hours < 0 ? 23 : hours;
+  let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // const nowHours = new Date().getHours();
+  // let hours = 24 - nowHours;
+  // hours -= 1;
+  // hours = hours < 0 ? 23 : hours;
   let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
